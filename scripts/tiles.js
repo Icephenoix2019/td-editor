@@ -57,6 +57,11 @@ var tiles = {
     neon_green: [131, 245, 44],
     neon_orange: [255, 102, 0],
     neon_purple: [110, 13, 208],
+    // Neon 2
+    neon_red: [255, 0, 0],
+    neon_teal: [0, 255, 136],
+    neon_blue: [0, 0, 255],
+    neon_cyan: [0, 255, 255],
     // Color Set 0
     c0_lightBrown: [206, 171, 171],
     c0_lightPurple: [123, 95, 167],
