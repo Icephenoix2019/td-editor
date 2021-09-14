@@ -319,3 +319,8 @@ button {
 .neon_purple {
     background-color: rgb(110, 13, 208);
 }
+
+/* Liquids */
+.water {
+    background-color: rgb(49, 157, 204);
+}
