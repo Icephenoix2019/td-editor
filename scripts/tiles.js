@@ -57,11 +57,6 @@ var tiles = {
     neon_green: [131, 245, 44],
     neon_orange: [255, 102, 0],
     neon_purple: [110, 13, 208],
-    // Neon 2
-    neon_red: [255, 0, 0],
-    neon_teal: [0, 255, 136],
-    neon_blue: [0, 0, 255],
-    neon_cyan: [0, 255, 255],
     // Color Set 0
     c0_lightBrown: [206, 171, 171],
     c0_lightPurple: [123, 95, 167],
@@ -79,5 +74,23 @@ var tiles = {
     c2_navyBlue: [1, 18, 57],
     c2_darkBlue: [3, 36, 97],
     c2_paleYellow: [232, 228, 197],
-    c2_lightYellow: [248, 241, 193]
+    c2_lightYellow: [248, 241, 193],
+    // Liquid Set 1
+    water: function(x, y, dir) {
+        if (dir === 0) return;
+        push();
+        var c = center(x, y);
+        translate(c.x, c.y);
+        rotate([0, PI / 2][(dir - 1) % 2]);
+
+        fill(49, 157, 204);
+        rect(x * ts, y * ts, ts, ts);
+        var side = 0.25 * ts;
+        var back = 0.25 * ts;
+        rectMode(CENTER);
+        fill(19, 75, 158);
+        rect(-back, -side, back * 2, side * 2, 10);
+
+        pop();
+    }
 };
